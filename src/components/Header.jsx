@@ -1,10 +1,32 @@
-const Header = () => (
-  <div className="navbar bg-base-100">
+import { useEffect, useState } from "react";
+import { useAppStore } from "../store/store";
+
+const Header = () => {
+
+  const [inputText, setInputText] = useState("");
+  const fetchNews = useAppStore(state => state.fetchNews);
+  useEffect(() => {
+    if (inputText.trim() !== "") {
+      const delayDebounceFn = setTimeout(() => {
+        fetchNews(inputText);
+      }, 500);
+
+      return () => clearTimeout(delayDebounceFn);
+    }
+  }, [inputText, fetchNews]);
+
+  return (<div className="navbar bg-base-100">
     <div className="flex-1">
       <a className="btn btn-ghost text-xl">daily news</a>
     </div>
     <div className="flex gap-2">
-      <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
+      <input
+        type="search"
+        value={inputText}
+        onChange={e => setInputText(e.target.value)}
+        placeholder="Search"
+        className="input input-bordered w-24 md:w-auto"
+      />
       <div className="dropdown dropdown-end">
         <button className="btn btn-ghost btn-circle">
           <div className="indicator">
@@ -15,6 +37,7 @@ const Header = () => (
       </div>
     </div>
   </div>
-);
+  )
+};
 
 export default Header;
