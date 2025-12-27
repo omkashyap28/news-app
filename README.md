@@ -1,16 +1,47 @@
-# React + Vite
+# News App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **React + Vite news application** that lets users browse the latest news articles with fast performance and minimal configuration.
 
-Currently, two official plugins are available:
+This project uses Vite for a super-fast development experience and React for building UI components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🔍 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Fetches news from a public API (e.g., NewsAPI)
+- Responsive UI for desktop and mobile
+- Search for articles
+- Filter by categories (e.g., technology, business, sports)
+- Fast development with Vite hot reload
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧰 Tech Stack
+
+| Technology     | Description                         |
+| -------------- | ----------------------------------- |
+| **React**      | UI library                          |
+| **Vite**       | Blazing fast bundler and dev server |
+| **JavaScript** | Core language                       |
+| **CSS**        | Styling                             |
+| **daisyui**    | Components                          |
+
+---
+
+## 🚀 Getting Started
+
+### 💾 Clone the repo
+
+<!-- ```bash -->
+
+git clone https://github.com/omkashyap28/news-app.git
+cd news-app
+yarn/npm install
+
+## setup your env variables
+
+1. Go to https://newsapi.org
+2. Create accout and get API key
+3. create .env file in root folder add add VITE_NEWS_API_KEY="YOUR_API_KEY"
+
+npm run dev
