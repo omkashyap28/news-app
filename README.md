@@ -32,7 +32,7 @@ This project uses Vite for a super-fast development experience and React for bui
 
 ### 💾 Clone the repo
 
-<!-- ```bash -->
+```bash 
 
 git clone https://github.com/omkashyap28/news-app.git
 cd news-app
