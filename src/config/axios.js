@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: String(import.meta.env.VITE_API_BASE_URL),
+  baseURL: "https://newsapi.org/v2/",
   timeout: 5000,
 });
 
