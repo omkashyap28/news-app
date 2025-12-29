@@ -45,4 +45,7 @@ yarn/npm install
 2. Create accout and get API key
 3. create .env file in root folder and add `VITE_NEWS_API_KEY=YOUR_API_KEY`
 
-```npm run dev```
+```bash
+
+npm run dev
+```
