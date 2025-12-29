@@ -23,8 +23,9 @@ This project uses Vite for a super-fast development experience and React for bui
 | **React**      | UI library                          |
 | **Vite**       | Blazing fast bundler and dev server |
 | **JavaScript** | Core language                       |
-| **CSS**        | Styling                             |
-| **daisyui**    | Components                          |
+| **Tailwindcss**  | Styling                             |
+| **Daisyui**  | Components                          |
+|**Zustand**  | State management 
 
 ---
 
@@ -37,11 +38,11 @@ This project uses Vite for a super-fast development experience and React for bui
 git clone https://github.com/omkashyap28/news-app.git
 cd news-app
 yarn/npm install
-
+```
 ## setup your env variables
 
 1. Go to https://newsapi.org
 2. Create accout and get API key
-3. create .env file in root folder add add VITE_NEWS_API_KEY="YOUR_API_KEY"
+3. create .env file in root folder and add `VITE_NEWS_API_KEY=YOUR_API_KEY`
 
-npm run dev
+```npm run dev```
